@@ -12,17 +12,18 @@ public class DJListController {
     private DJListRepository djListRepository;
     private UserRepository userRepository;
     private TrackRepository trackRepository;
-    private DJListTrackFragmentRepository djListTrackFragmentRepository;
+    //private DJListTrackFragmentRepository djListTrackFragmentRepository;
 
     public DJListController(DJListRepository djListRepository, UserRepository userRepository,
-                            TrackRepository trackRepository,
-                            DJListTrackFragmentRepository djListTrackFragmentRepository) {
+                            TrackRepository trackRepository) {
+                            //DJListTrackFragmentRepository djListTrackFragmentRepository) {
         this.djListRepository = djListRepository;
         this.userRepository = userRepository;
         this.trackRepository = trackRepository;
-        this.djListTrackFragmentRepository = djListTrackFragmentRepository;
+        //this.djListTrackFragmentRepository = djListTrackFragmentRepository;
     }
 
+    //You'll need to uncomment lines 15, 19, and 23. Also arrange line 18
     /* TODO 4.2
         Implement a method (or as many as you need) to add track fragments to existing DJLists. For example:
         public void addTracksToDJlistWithTimeRange(String userEmail, Long DJListId, List<PlaylistTrackDTO> tracksDTO)

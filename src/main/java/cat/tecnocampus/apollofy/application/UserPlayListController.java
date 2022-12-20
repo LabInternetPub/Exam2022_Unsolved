@@ -19,16 +19,13 @@ public class UserPlayListController {
     private final PlayListRepository playListRepository;
     private final LikeTrackRepository likeTrackRepository;
 
-    private final DJListTrackFragmentRepository DJListTrackFragmentRepository;
-
     public UserPlayListController(TrackRepository trackRepository,
                                   UserRepository userRepository, PlayListRepository playListRepository,
-                                  LikeTrackRepository likeTrackRepository, DJListTrackFragmentRepository DJListTrackFragmentRepository) {
+                                  LikeTrackRepository likeTrackRepository) {
         this.trackRepository = trackRepository;
         this.userRepository = userRepository;
         this.playListRepository = playListRepository;
         this.likeTrackRepository = likeTrackRepository;
-        this.DJListTrackFragmentRepository = DJListTrackFragmentRepository;
     }
 
 
