@@ -26,7 +26,7 @@ public class DJListController {
     //You'll need to uncomment lines 15, 19, and 23. Also rearrange line 18
     /* TODO 4.2
         Implement a method (or as many as you need) to add track fragments to existing DJLists. For example:
-        public void addTracksToDJlistWithTimeRange(String userEmail, Long DJListId, List<PlaylistTrackDTO> tracksDTO)
+        public void addTracksToDJlistWithTimeRange(String userEmail, Long DJListId, List<DJListTrackDTO> tracksDTO)
 
         Also you may want to receive a list of objects with the following attributes:
         Long trackId, Long startTimeMillis, Long endTimeMillis.
@@ -36,15 +36,15 @@ public class DJListController {
         to a given DJList and Track (see _TODO 4.5)
 
         This method has to verify the following constraints and implement the specified behaviour:
-        - The playlist with the provided identifier exists.
+        - The DJList with the provided identifier exists.
         - The user with the provided identifier exists.
         - The provided user is the owner of the DJList.
         - For each of the DJListTrackDTO in "trackDTO" parameter:
               -you must verify that the track exists.
-              -in the case that the track is already associated to that playlist, then startTimeMillis and endTimeMillis
-               are updated in its corresponding PlaylistTrack object.
-              -in case the track is not associated to the playlist yet, then you must create a new PlaylistTrack object,
-               linking the track to the playlist and specifying startTimeMillis and endTimeMillis accordingly.
+              -in the case that the track is already associated to that DJList, then startTimeMillis and endTimeMillis
+               are updated in its corresponding DJListTrackFragment object.
+              -in case the track is not associated to the DJList yet, then you must create a new DJListTrackFragment object,
+               linking the track to the DJList and specifying startTimeMillis and endTimeMillis accordingly.
        */
 
 }

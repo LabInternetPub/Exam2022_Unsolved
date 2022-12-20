@@ -62,11 +62,11 @@ public class DJListTrackFragment {
         this.track = track;
     }
 
-    public DJList getPlaylist() {
+    public DJList getDjList() {
         return djList;
     }
 
-    public void setPlaylist(DJList djList) {
+    public void setDjList(DJList djList) {
         this.djList = djList;
     }
 
@@ -86,7 +86,7 @@ public class DJListTrackFragment {
 
     @Override
     public String toString() {
-        return "PlaylistTrack{" +
+        return "DJListTrackFragment{" +
                 "id=" + id +
                 ", startTimeMillis=" + startTimeMillis +
                 ", endTimeMillis=" + endTimeMillis +

@@ -1,7 +1,6 @@
 package cat.tecnocampus.apollofy.persistence;
 
 import cat.tecnocampus.apollofy.domain.DJList;
-import cat.tecnocampus.apollofy.domain.Playlist;
 import cat.tecnocampus.apollofy.domain.DJListTrackFragment;
 import cat.tecnocampus.apollofy.domain.Track;
 import org.springframework.data.jpa.repository.JpaRepository;
