@@ -3,7 +3,6 @@ package cat.tecnocampus.apollofy.application;
 import cat.tecnocampus.apollofy.application.dto.PopularGenre;
 import cat.tecnocampus.apollofy.domain.Genre;
 import cat.tecnocampus.apollofy.persistence.GenreRepository;
-import cat.tecnocampus.apollofy.persistence.TrackRepository;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;

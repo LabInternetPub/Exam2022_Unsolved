@@ -4,7 +4,10 @@ import cat.tecnocampus.apollofy.application.exceptions.ElementNotFoundInBBDD;
 import cat.tecnocampus.apollofy.domain.Playlist;
 import cat.tecnocampus.apollofy.domain.Track;
 import cat.tecnocampus.apollofy.domain.UserFy;
-import cat.tecnocampus.apollofy.persistence.*;
+import cat.tecnocampus.apollofy.persistence.LikeTrackRepository;
+import cat.tecnocampus.apollofy.persistence.PlayListRepository;
+import cat.tecnocampus.apollofy.persistence.TrackRepository;
+import cat.tecnocampus.apollofy.persistence.UserRepository;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

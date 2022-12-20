@@ -1,14 +1,13 @@
 package cat.tecnocampus.apollofy.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.Hibernate;
 import org.hibernate.annotations.NaturalId;
 
-import javax.persistence.*;
-import java.util.HashSet;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Objects;
-import java.util.Set;
 
 @Entity
 public class Genre {

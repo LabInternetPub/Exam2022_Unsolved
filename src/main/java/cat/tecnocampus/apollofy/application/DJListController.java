@@ -23,7 +23,7 @@ public class DJListController {
         //this.djListTrackFragmentRepository = djListTrackFragmentRepository;
     }
 
-    //You'll need to uncomment lines 15, 19, and 23. Also arrange line 18
+    //You'll need to uncomment lines 15, 19, and 23. Also rearrange line 18
     /* TODO 4.2
         Implement a method (or as many as you need) to add track fragments to existing DJLists. For example:
         public void addTracksToDJlistWithTimeRange(String userEmail, Long DJListId, List<PlaylistTrackDTO> tracksDTO)
@@ -38,8 +38,8 @@ public class DJListController {
         This method has to verify the following constraints and implement the specified behaviour:
         - The playlist with the provided identifier exists.
         - The user with the provided identifier exists.
-        - The provided user is the owner of the playlist.
-        - For each of the PlaylistTrackDTO in "tracksDTO" parameter:
+        - The provided user is the owner of the DJList.
+        - For each of the DJListTrackDTO in "trackDTO" parameter:
               -you must verify that the track exists.
               -in the case that the track is already associated to that playlist, then startTimeMillis and endTimeMillis
                are updated in its corresponding PlaylistTrack object.
