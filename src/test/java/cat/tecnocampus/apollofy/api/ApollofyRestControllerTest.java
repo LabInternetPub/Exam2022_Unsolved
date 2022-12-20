@@ -69,6 +69,7 @@ public class ApollofyRestControllerTest {
         assertEquals(userFy.getSecondName(), "Alvarez");
     }
 
+    //Test for QUESTION 4
     @Test
     @WithMockUser(username = "jalcobe@tecnocampus.cat", roles = {"PROFESSIONAL"})
     void addTracksToPlayListWithTimeRange() throws Exception {

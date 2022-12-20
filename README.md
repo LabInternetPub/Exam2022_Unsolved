@@ -9,13 +9,12 @@ The domain of the exercise is already known for you since we sent you the code, 
 * BEFORE **touching** the code, run the application and see it working on your computer.
 * You have example calls in files "resources/*.http". You can execute requests directly from this files without the need of an external http client like Postman
 * Read the questions and the TODOs
-* When attempting to answer the questions, modify the code in small steps and try the application (run it) after every step. In this way is easier to track possible errors
+* When attempting to answer the questions, modify the code in small steps and try the application (run it) after every step. In this way, it is easier to track possible errors
 * A code that doesn't compile or run will be marked zero points
 * All the questions are independent and can be answered in any order. So, if you get stuck in a question go ahead and attempt to answer another one.
 * In the code you'll see **TODO**s where you need to insert new code. TODOs explain what you need to do and may contain some clues. Please,
   don't delete the TODOs from the code. TODOs are numbered according to the question number. When a question has more than one TODO they are
   numbered TODO X.1, TODO X.2 and so on, where X is the question number. There are few TODOs that don't need any code, they are there to explain code relevant to the question (and its answer)
-* In the "resources" folder, you'll find files with the termination ".http" where you can see (and execute with Intellij http client) call examples
 
 ## Tests
 In /test/java/cat/tecnocampus/apollofy/api, there is a suit of tests that should pass when all the questions are answered correctly
@@ -69,12 +68,12 @@ Our platform, Apollofy, is getting noticed and used among disc-jockeys (also kno
 That is, the lists not only need to contain tracks but also the moment in which they should begin and end when played in the disco or musical bar.
 
 We will call these lists **DJList**. They are going to be owned by a user, and instead of Tracks they will list **DJListTrackFragment**. Actually,
-DJListTrackFragment will play the role of an association class pointing to both a User and a Track, and containing the initial and final 
+DJListTrackFragment will play the role of an association class pointing to both a DJList and a Track, and containing the initial and final 
 milliseconds of the track fragment.
 
 Note that, conceptually, they are very similar to a Playlist but the implementation differs because we don't want DJList to 
 have a list of track fragments (DJListTrackFragment). Instead, it will be the DJListTrackFragment that will point to DJList and Track. 
-See the diagram on the blackboard.
+See the diagram on the blackboard and recall that you have already implemented something similar in your projects.
 
 For this exercise you should **implement** a REST method that handles @PostMapping("/api/djlist/{id}/tracks") API calls to register new track
 fragments associations with the DJList specified as parameter. We assume that the DJList already exists in the database 
@@ -86,9 +85,9 @@ Now read the TODOs 4.x. They will gide you through the exercise.
 We would like to have a new entrypoint in our REST API that list only the **id, title and duration** of all tracks in our system. 
 You can add the entry GET /api/tracksCore to get the required track information.
 Note that you need to
-1. Create a DTO with the three required fields of tracks
-2. Add a new method to the TrackRepository that returns an object of the DTO created in point 1. Recall that you if the column names of the
-selection matches the filed names of the DTO live is easier.
+1. Create a DTO with the three required track fields
+2. Add a new method to the TrackRepository that returns an object of the DTO created in point 1. Recall that, if the column names of the
+selection matches the filed names of the DTO, live is easier.
 3. Add a new method to the TrackController that calls the method in the TrackRepository
 5. Add the entry point to the ApollofyRestController that calls the method in the TrackController
 Well, the previous points are the TODOs for this exercise
